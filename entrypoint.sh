@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+apk add --no-cache vim
+
 
 # 如参数不齐全，容器退出
 [[ -z "$WEB_DOMAIN" || -z "$DATA_DOMAIN" ]] && echo " Variables of WEB_JSON and SERVER_JSON Variables are required. " && exit 1
